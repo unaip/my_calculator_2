@@ -2,9 +2,9 @@
 <!DOCTYPE html><html><head>
 <title>Calculator</title><meta charset="utf-8">
 <script type="text/javascript">
-function cube() {
+function power(exp) {
   var num = document.getElementById("n1");
-  num.value = Math.pow(num.value, 3);
+  num.value = Math.pow(num.value, exp);
 }
 function square() {
   var num = document.getElementById("n1");
@@ -20,7 +20,8 @@ function inverse() {
   <h1>Calculadora de ......Unai Pildain Legorburu......</h1>
   Number:
   <input type="text" id="n1"><p>
-  <button onclick="cube()"> x^3 </button>
+  <button onclick="power(3)"> x^3 </button>
+  <button onclick="power(4)"> x^4  </button>
   <button onclick="square()"> x^2 </button>
   <button onclick="inverse()"> 1/x </button>
 </body>
